@@ -30,15 +30,18 @@
             }
         }
     });
+    $(
+
+    )
 
     $(window).scroll(function () {
         var window_top = $(window).scrollTop() + 1;
         if (window_top > 50) {
-          $('.navbar-sticky').addClass('menu_fixed animated fadeInDown');
+            $('.navbar-sticky').addClass('menu_fixed animated fadeInDown');
         } else {
-          $('.navbar-sticky').removeClass('menu_fixed animated fadeInDown');
+            $('.navbar-sticky').removeClass('menu_fixed animated fadeInDown');
         }
-      });
+    });
 
     $(window).scroll(function () {
         var window_top = $(window).scrollTop() + 1;
@@ -67,23 +70,23 @@
             scrollTop: $(anchor.attr('href')).offset().top - 100
         }, 1000);
         e.preventDefault();
-      })
+    })
 
-      var offSetTop = 100;
-      var $scrollToTopButton = $('.scroll-to-top');
-        //Check to see if the window is top if not then display button
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > offSetTop) {
-                $scrollToTopButton.fadeIn();
-            } else {
-                $scrollToTopButton.fadeOut();
-            }
-        });
-        
-        //Click event to scroll to top
-        $scrollToTopButton.click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-            return false;
-        });
+    var offSetTop = 100;
+    var $scrollToTopButton = $('.scroll-to-top');
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > offSetTop) {
+            $scrollToTopButton.fadeIn();
+        } else {
+            $scrollToTopButton.fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $scrollToTopButton.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
 
 }(jQuery));
