@@ -150,6 +150,11 @@ header .navbar {
     font-family: var(--theme-heading-font);
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+}
+
 .navbar-toggler {
     border: 0;
     padding: 0;
@@ -464,7 +469,7 @@ header .navbar {
     color: #fff;
 }
 
-.cta .btn-black:hover {
+.btn-black:hover {
     color: #fff;
     background: var(--secondary-color);
 }
@@ -784,4 +789,141 @@ header .navbar {
 
 .btn-2:hover svg {
     transform: translateX(5px);
+}
+
+/* PURCHASE PAGE */
+
+.purchase-sec {
+    padding-block: 120px 50px;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-details .book-img {
+    border: 1px solid var(--primary-color);
+    padding-block: 10px;
+}
+
+.book-details .book-img img {
+    max-height: 360px;
+}
+
+.book-details-content .title {
+    font-size: 28px;
+    border: 1px solid var(--primary-color);
+    border-top: none;
+    padding-block: 10px;
+}
+
+.book-details-content .price {
+    font-size: 25px;
+    color: #343f52;
+    font-weight: 700;
+    border: 1px solid var(--primary-color);
+    border-top: none;
+    padding-block: 10px;
+}
+
+.book-details-content .price span {
+    margin-left: 50px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0;
+    border-color: #343f52;
+    height: 40px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+.veteran {
+    background-color: rgba(69, 84, 120, 0.3);
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding-block: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.form-select.primary-select {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 20px;
+}
+
+.primary-select option {
+    background-color: #fff;
+    color: #000;
+}
+
+.primary-select option:hover {
+    background-color: var(--secondary-color);
+}
+
+.primary-select option:disabled {
+    color: #ccc;
+}
+
+.purchase-action {
+    background-color: rgba(69, 84, 120, 0.2);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.purchase-action .btn.btn-black {
+    padding-block: 8px;
+}
+
+.purchase-action .total {
+    position: relative;
+}
+
+.purchase-action .total p {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.purchase-action .total span {
+    margin-left: 10px;
+}
+
+.purchase-action .total s {
+    font-size: 18px;
+    color: #777;
+}
+
+.nv-form {
+    padding: 2rem;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    transition: all .3s ease-out;
+}
+
+#discountText {
+    position: absolute;
+    background-color: #8d1a24;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    left: 0;
+    top: -150%;
 }
